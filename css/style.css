@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+li {
+    display: inline-block;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.titulos:hover{
+color:  rgb(186, 130, 238);
+}
+
+#a-link:hover{
+    color:  rgb(186, 130, 238);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 20px;
+    
+
+}
+
+.contenedorRopa{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 3rem 0;
+}
+
+.ropa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
+}
+
+.ropaImagen{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.ropaTitulo{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: rgb(124, 122, 122);
+    font-weight: lighter;
+}
+
+.ropaPrecio{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(36, 36, 35);
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.ropaBtn{
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: rgb(186, 130, 238);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: none;
+}
+
+.ropaSale{
+    text-decoration: line-through;
+    color: rgb(189, 0, 0);
+}
+
+.contenedorLocales{
+    display: flex;
+    justify-content: space-around;
+}
+
+.localesTitulo{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-weight: 10;
+}
+
+.localesGps{
+    height: 500px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.locales{
+    margin-top: 100px;
+}
+
+.contenedorContacto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    margin: 6rem 0;
+    justify-items: center;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 265px;
+    padding: 10px;
+    margin: 10px 50px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
+}
+
+
+.contactoImagen{
+    width: 15%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+
+}
+.contactoTitulo{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    height: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+
+.contactoTxt{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.linkRedes{
+    text-decoration: none;
+    color: black;
+}
+
+.linkRedes:hover{
+    color: blueviolet;
+}
+
+.icon-footer{
+    width: 30px;
+}
+
+.icon-footer{
+    
+    border-radius: 20px;
+}
+
+@media (max-width: 500px) {
+    .contenedorRopa{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contenedorContacto{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contacto{
+        height: 80%;
+        margin-bottom: 66px;
+    }
+    .localesGps{
+        width: 50vh;
+        height: 70vh;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .contenedorRopa{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contenedorContacto{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contacto{
+        height: 80%;
+        margin-bottom: 66px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .contenedorRopa{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
